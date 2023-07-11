@@ -3,7 +3,25 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.5.33530.505
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlightBookingLib", "FlightBookingLib\FlightBookingLib.csproj", "{5E774521-038B-4153-85E1-7AEC5AEA8EDE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlightBookingAPI", "FlightBookingAPI\FlightBookingAPI.csproj", "{A2871B92-BD48-48E2-99DB-0EEB23853584}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5E774521-038B-4153-85E1-7AEC5AEA8EDE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5E774521-038B-4153-85E1-7AEC5AEA8EDE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5E774521-038B-4153-85E1-7AEC5AEA8EDE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5E774521-038B-4153-85E1-7AEC5AEA8EDE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A2871B92-BD48-48E2-99DB-0EEB23853584}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A2871B92-BD48-48E2-99DB-0EEB23853584}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A2871B92-BD48-48E2-99DB-0EEB23853584}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A2871B92-BD48-48E2-99DB-0EEB23853584}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
