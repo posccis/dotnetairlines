@@ -10,6 +10,7 @@ namespace FlightBookingLib.Models
     [Table("CartoesDeCredito")]
     public class CartaoDeCredito
     {
+        public int Id { get; set; }
         public int IdTripulante { get; set; }
         public string Numero { get; set; }
         public string NomeTitular { get; set; }

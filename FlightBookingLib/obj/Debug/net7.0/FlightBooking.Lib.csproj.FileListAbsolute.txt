@@ -1,0 +1,14 @@
+D:\victor\estudos\programming\FlightBookingSystem\FlightBookingLib\bin\Debug\net7.0\FlightBooking.Lib.deps.json
+D:\victor\estudos\programming\FlightBookingSystem\FlightBookingLib\bin\Debug\net7.0\FlightBooking.Lib.runtimeconfig.json
+D:\victor\estudos\programming\FlightBookingSystem\FlightBookingLib\bin\Debug\net7.0\FlightBooking.Lib.dll
+D:\victor\estudos\programming\FlightBookingSystem\FlightBookingLib\bin\Debug\net7.0\FlightBooking.Lib.pdb
+D:\victor\estudos\programming\FlightBookingSystem\FlightBookingLib\obj\Debug\net7.0\FlightBooking.Lib.csproj.AssemblyReference.cache
+D:\victor\estudos\programming\FlightBookingSystem\FlightBookingLib\obj\Debug\net7.0\FlightBooking.Lib.GeneratedMSBuildEditorConfig.editorconfig
+D:\victor\estudos\programming\FlightBookingSystem\FlightBookingLib\obj\Debug\net7.0\FlightBooking.Lib.AssemblyInfoInputs.cache
+D:\victor\estudos\programming\FlightBookingSystem\FlightBookingLib\obj\Debug\net7.0\FlightBooking.Lib.AssemblyInfo.cs
+D:\victor\estudos\programming\FlightBookingSystem\FlightBookingLib\obj\Debug\net7.0\FlightBooking.Lib.csproj.CoreCompileInputs.cache
+D:\victor\estudos\programming\FlightBookingSystem\FlightBookingLib\obj\Debug\net7.0\FlightBooking.Lib.dll
+D:\victor\estudos\programming\FlightBookingSystem\FlightBookingLib\obj\Debug\net7.0\refint\FlightBooking.Lib.dll
+D:\victor\estudos\programming\FlightBookingSystem\FlightBookingLib\obj\Debug\net7.0\FlightBooking.Lib.pdb
+D:\victor\estudos\programming\FlightBookingSystem\FlightBookingLib\obj\Debug\net7.0\FlightBooking.Lib.genruntimeconfig.cache
+D:\victor\estudos\programming\FlightBookingSystem\FlightBookingLib\obj\Debug\net7.0\ref\FlightBooking.Lib.dll

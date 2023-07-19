@@ -1,15 +1,15 @@
 {
   "format": 1,
   "restore": {
-    "D:\\victor\\estudos\\programming\\FlightBookingSystem\\FlightBookingLib\\FlightBookingLib.csproj": {}
+    "D:\\victor\\estudos\\programming\\FlightBookingSystem\\FlightBookingLib\\FlightBooking.Lib.csproj": {}
   },
   "projects": {
-    "D:\\victor\\estudos\\programming\\FlightBookingSystem\\FlightBookingLib\\FlightBookingLib.csproj": {
+    "D:\\victor\\estudos\\programming\\FlightBookingSystem\\FlightBookingLib\\FlightBooking.Lib.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\victor\\estudos\\programming\\FlightBookingSystem\\FlightBookingLib\\FlightBookingLib.csproj",
-        "projectName": "FlightBookingLib",
-        "projectPath": "D:\\victor\\estudos\\programming\\FlightBookingSystem\\FlightBookingLib\\FlightBookingLib.csproj",
+        "projectUniqueName": "D:\\victor\\estudos\\programming\\FlightBookingSystem\\FlightBookingLib\\FlightBooking.Lib.csproj",
+        "projectName": "FlightBooking.Lib",
+        "projectPath": "D:\\victor\\estudos\\programming\\FlightBookingSystem\\FlightBookingLib\\FlightBooking.Lib.csproj",
         "packagesPath": "C:\\Users\\victo\\.nuget\\packages\\",
         "outputPath": "D:\\victor\\estudos\\programming\\FlightBookingSystem\\FlightBookingLib\\obj\\",
         "projectStyle": "PackageReference",
@@ -55,6 +55,12 @@
               "version": "[7.0.9, )"
             },
             "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[7.0.9, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
               "target": "Package",
               "version": "[7.0.9, )"
             }

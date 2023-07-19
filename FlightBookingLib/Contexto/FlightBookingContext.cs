@@ -33,7 +33,7 @@ namespace FlightBooking.Lib.Contexto
         public DbSet<Piloto> Pilotos { get; set; }
         public DbSet<Copiloto> Copiloto { get; set; }
 
-        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder) => optionsBuilder.UseSqlServer("Server=localhost;Database=FlightBooking;User Id=sa;Password=JK64victorjk;trusted_connection=true;encrypt=false;");
+        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder) => optionsBuilder.UseSqlServer("Server=localhost,1433;Database=FlightBooking;User Id=sa;Password=JK64victorjk;trusted_connection=false;encrypt=false;");
 
 
     }

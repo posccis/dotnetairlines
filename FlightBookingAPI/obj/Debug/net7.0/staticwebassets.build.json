@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "W//pIELN58iPCb+NPGKW3W8m4LTTY8KpZ7NM+EWjzks=",
+  "Source": "FlightBooking.API",
+  "BasePath": "_content/FlightBooking.API",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
