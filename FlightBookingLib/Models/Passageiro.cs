@@ -1,11 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace FlightBookingLib.Models
 {
+    [Table("Passageiros")]
     public class Passageiro
     {
         public int Id { get; set; }

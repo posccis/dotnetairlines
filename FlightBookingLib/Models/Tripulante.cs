@@ -7,18 +7,17 @@ using System.Threading.Tasks;
 
 namespace FlightBookingLib.Models
 {
-    [Table("Pilotos")]
-    public class Piloto
+    [Table("Tripulantes")]
+    public class Tripulante
     {
         public int Id { get; set; }
         public string Nome { get; set; }
         public string CPF { get; set; }
         public string Endereco { get; set; }
         public string TempoDeVoo { get; set; }
+        public string Funcao { get; set; }
         public DateTime DataDeNascimeto { get; set; }
 
-
-        public ICollection<Voo> Voos { get; set; } 
-
+        public ICollection<Voo> Voos { get; set; }
     }
 }

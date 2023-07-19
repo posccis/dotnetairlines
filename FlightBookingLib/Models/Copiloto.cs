@@ -7,8 +7,8 @@ using System.Threading.Tasks;
 
 namespace FlightBookingLib.Models
 {
-    [Table("Pilotos")]
-    public class Piloto
+    [Table("Copilotos")]
+    public class Copiloto
     {
         public int Id { get; set; }
         public string Nome { get; set; }
