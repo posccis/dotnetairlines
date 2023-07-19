@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ohJsFd1a77f/Aw+sXI4rDu0+uQwzy6RrR1KKgToehPBTCzo7wyWFghHH2psrLv+jNS3vAQvUABnB2oCRR6oaRQ==",
+  "dgSpecHash": "b8QhpLeEIhNfaX2Y5YjkSOKXtxijDyqYBsto8AiJbd1ZI4NzWt8P1b7cHXtr0DSAI3WE5uQwdn/N92r+lMnfsQ==",
   "success": true,
-  "projectFilePath": "D:\\victor\\estudos\\programming\\FlightBookingSystem\\FlightBookingAPI\\FlightBookingAPI.csproj",
+  "projectFilePath": "D:\\victor\\estudos\\programming\\FlightBookingSystem\\FlightBookingAPI\\FlightBooking.API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\victo\\.nuget\\packages\\microsoft.aspnetcore.openapi\\7.0.5\\microsoft.aspnetcore.openapi.7.0.5.nupkg.sha512",
     "C:\\Users\\victo\\.nuget\\packages\\microsoft.extensions.apidescription.server\\6.0.5\\microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",

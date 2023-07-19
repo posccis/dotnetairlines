@@ -466,9 +466,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\victor\\estudos\\programming\\FlightBookingSystem\\FlightBookingAPI\\FlightBookingAPI.csproj",
-      "projectName": "FlightBookingAPI",
-      "projectPath": "D:\\victor\\estudos\\programming\\FlightBookingSystem\\FlightBookingAPI\\FlightBookingAPI.csproj",
+      "projectUniqueName": "D:\\victor\\estudos\\programming\\FlightBookingSystem\\FlightBookingAPI\\FlightBooking.API.csproj",
+      "projectName": "FlightBooking.API",
+      "projectPath": "D:\\victor\\estudos\\programming\\FlightBookingSystem\\FlightBookingAPI\\FlightBooking.API.csproj",
       "packagesPath": "C:\\Users\\victo\\.nuget\\packages\\",
       "outputPath": "D:\\victor\\estudos\\programming\\FlightBookingSystem\\FlightBookingAPI\\obj\\",
       "projectStyle": "PackageReference",
