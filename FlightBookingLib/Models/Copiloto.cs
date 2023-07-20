@@ -1,4 +1,5 @@
-﻿using System;
+﻿using FlightBooking.Lib.Interfaces;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
@@ -8,7 +9,7 @@ using System.Threading.Tasks;
 namespace FlightBookingLib.Models
 {
     [Table("Copilotos")]
-    public class Copiloto
+    public class Copiloto : IFuncionarioAviao
     {
         public int Id { get; set; }
         public string Nome { get; set; }
