@@ -13,17 +13,17 @@ namespace FlightBooking.Lib.Contexto
     public class FlightBookingContext : DbContext
     {
 
-        //protected IConfiguration _config;
-        //protected string _strCnx;
+        protected IConfiguration _config;
+        protected string _strCnx;
 
 
-        //public FlightBookingContext(IConfiguration config)
-        //{
+        public FlightBookingContext(IConfiguration config)
+        {
 
-        //    _config = new ConfigurationManager().AddJsonFile("appsettings.json").Build();
-            
-        //    _strCnx = _config.GetConnectionString("FlightBookingStr");
-        //}
+            _config = config;
+
+            _strCnx = _config.GetConnectionString("FlightBookingStr");
+        }
 
         public DbSet<Passageiro> Passageiros { get; set; }
         public DbSet<Tripulante> Tripulantes { get; set; }
@@ -33,7 +33,7 @@ namespace FlightBooking.Lib.Contexto
         public DbSet<Piloto> Pilotos { get; set; }
         public DbSet<Copiloto> Copiloto { get; set; }
 
-        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder) => optionsBuilder.UseSqlServer("Server=localhost,1433;Database=FlightBooking;User Id=sa;Password=JK64victorjk;trusted_connection=false;encrypt=false;");
+        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder) => optionsBuilder.UseSqlServer(_strCnx);
 
 
     }
