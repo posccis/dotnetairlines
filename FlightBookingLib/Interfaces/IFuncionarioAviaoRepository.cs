@@ -1,16 +1,17 @@
-﻿using System;
+﻿using FlightBooking.Domain.Interfaces;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace FlightBooking.Lib.Interfaces
+namespace FlightBooking.Repository.Interfaces
 {
     public interface IFuncionarioAviaoRepository<T> where T : IFuncionarioAviao
     {
-        void CadastrarFuncionario( T funcionario);
-        T ObterDadosFuncionarioPorId(int id);
-        T ObterDadosFuncionarioPorCPF(string cpf);
+        void InserirFuncionario( T funcionario);
+        T ObterFuncionarioPorId(int id);
+        T ObterFuncionarioPorCPF(string cpf);
         void AlterarFuncionario(T funcionario);
         void AlterarTempoDeVoo(string cpf);
         void RemoverFuncionario(T funcionario);

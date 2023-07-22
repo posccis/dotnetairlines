@@ -1132,6 +1132,16 @@
             "rid": "win"
           }
         }
+      },
+      "FlightBooking.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "compile": {
+          "bin/placeholder/FlightBooking.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/FlightBooking.Domain.dll": {}
+        }
       }
     }
   },
@@ -3452,10 +3462,16 @@
         "useSharedDesignerContext.txt",
         "version.txt"
       ]
+    },
+    "FlightBooking.Domain/1.0.0": {
+      "type": "project",
+      "path": "../FlightBooking.Domain/FlightBooking.Domain.csproj",
+      "msbuildProject": "../FlightBooking.Domain/FlightBooking.Domain.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net7.0": [
+      "FlightBooking.Domain >= 1.0.0",
       "Microsoft.EntityFrameworkCore >= 7.0.9",
       "Microsoft.EntityFrameworkCore.Design >= 7.0.9",
       "Microsoft.EntityFrameworkCore.SqlServer >= 7.0.9",
@@ -3469,9 +3485,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\victor\\estudos\\programming\\FlightBookingSystem\\FlightBookingLib\\FlightBooking.Lib.csproj",
-      "projectName": "FlightBooking.Lib",
-      "projectPath": "D:\\victor\\estudos\\programming\\FlightBookingSystem\\FlightBookingLib\\FlightBooking.Lib.csproj",
+      "projectUniqueName": "D:\\victor\\estudos\\programming\\FlightBookingSystem\\FlightBookingLib\\FlightBooking.Repository.csproj",
+      "projectName": "FlightBooking.Repository",
+      "projectPath": "D:\\victor\\estudos\\programming\\FlightBookingSystem\\FlightBookingLib\\FlightBooking.Repository.csproj",
       "packagesPath": "C:\\Users\\victo\\.nuget\\packages\\",
       "outputPath": "D:\\victor\\estudos\\programming\\FlightBookingSystem\\FlightBookingLib\\obj\\",
       "projectStyle": "PackageReference",
@@ -3493,7 +3509,11 @@
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "D:\\victor\\estudos\\programming\\FlightBookingSystem\\FlightBooking.Domain\\FlightBooking.Domain.csproj": {
+              "projectPath": "D:\\victor\\estudos\\programming\\FlightBookingSystem\\FlightBooking.Domain\\FlightBooking.Domain.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "KDBQ4Y5D9WX4IW/Bgc4vqAhXS5Lc6s6ILEAHxuFPncgLjlUzLNUoqV6uyXWGVAVxhhDfLvYUJc7PGtFNp8XRjA==",
+  "dgSpecHash": "4e70Hy/YQY3uAMe0H/59IiKTgsp2ahmjqjsFsjtPYx4kHCZ2rpvHGaS6g7Zpu2C28z3rqYykvQzu9BkMcK5LOw==",
   "success": true,
-  "projectFilePath": "D:\\victor\\estudos\\programming\\FlightBookingSystem\\FlightBookingLib\\FlightBooking.Lib.csproj",
+  "projectFilePath": "D:\\victor\\estudos\\programming\\FlightBookingSystem\\FlightBookingLib\\FlightBooking.Repository.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\victo\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\victo\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",

@@ -1,4 +1,4 @@
-﻿using FlightBookingLib.Models;
+﻿using FlightBooking.Domain.Models;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.IdentityModel.Protocols;
