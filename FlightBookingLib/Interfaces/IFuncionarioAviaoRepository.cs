@@ -13,10 +13,8 @@ namespace FlightBooking.Repository.Interfaces
         T ObterFuncionarioPorId(int id);
         T ObterFuncionarioPorCPF(string cpf);
         void AlterarFuncionario(T funcionario);
-        void AlterarTempoDeVoo(string cpf);
         void RemoverFuncionario(T funcionario);
-        ICollection<T> RetornarTodosFuncionarios();
-        ICollection<T> RetornarTodosOsPilotos();
-        ICollection<T> RetornarTodosOsCopilotos();
+        List<T> RetornarTodosFuncionarios();
+
     }
 }

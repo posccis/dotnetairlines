@@ -24,21 +24,52 @@ namespace FlightBooking.Repository.Repositorio
             _ctxt = new FlightBookingContext(_config);
         }
 
-        public void AlterarFuncionario(Tripulante tripulante)
+        public async void AlterarFuncionario(Tripulante tripulante)
         {
-            throw new NotImplementedException();
+            try
+            {
+                _ctxt.Tripulantes.Update(tripulante);
+                await _ctxt.SaveChangesAsync();
+            }
+            catch (DbUpdateException dbe)
+            {
+
+                var sqlException = dbe.GetBaseException() as SqlException;
+                int posicaoInicio = sqlException.Message.IndexOf("'") + 1;
+                int posicaoFim = sqlException.Message.IndexOf("'", posicaoInicio);
+                var coluna = sqlException.Message.Substring(posicaoInicio, posicaoFim - posicaoInicio);
+                if (sqlException != null && sqlException.Number == 2601)
+                {
+                    throw new FlightBookingRepositoryException($"Provavelmente você está tentando inserir um {coluna} que já está em uso! Confirme seus dados e tente novamente.");
+                }
+                else if (sqlException != null && sqlException.Number == 515)
+                {
+                    throw new FlightBookingRepositoryException($"Provavelmente você esqueceu de inserir {coluna}! Confirme seus dados e tente novamente.");
+                }
+                else if (sqlException != null && sqlException.Number == 208)
+                {
+                    throw new FlightBookingRepositoryException("Aparentemente a tabela a qual você está tentando inserir os dados não existe! Confirme o nome da tabela e tente novamente.");
+                }
+
+                throw new FlightBookingRepositoryException(dbe.Message);
+            }
+            catch (Exception ex)
+            {
+                throw new FlightBookingRepositoryException(ex.Message);
+
+            }
+            finally
+            {
+                _ctxt.Dispose();
+            }
         }
 
-        public void AlterarTempoDeVoo(string cpf)
-        {
-            throw new NotImplementedException();
-        }
-
-        public void InserirFuncionario(Tripulante tripulante)
+        public async void InserirFuncionario(Tripulante tripulante)
         {
             try
             {
                 _ctxt.Tripulantes.Add(tripulante);
+                await _ctxt.SaveChangesAsync();
             }
             catch (DbUpdateException dbe)
             {
@@ -69,38 +100,171 @@ namespace FlightBooking.Repository.Repositorio
             }
             finally
             {
-                _ctxt.SaveChangesAsync();
+                _ctxt.Dispose();
             }
         }
 
         public Tripulante ObterFuncionarioPorCPF(string cpf)
         {
-            throw new NotImplementedException();
+            try
+            {
+                var tripulante = _ctxt.Tripulantes.FirstOrDefault(tri => tri.CPF == cpf);
+                return tripulante;
+            }
+            catch (DbUpdateException dbe)
+            {
+
+                var sqlException = dbe.GetBaseException() as SqlException;
+                int posicaoInicio = sqlException.Message.IndexOf("'") + 1;
+                int posicaoFim = sqlException.Message.IndexOf("'", posicaoInicio);
+                var coluna = sqlException.Message.Substring(posicaoInicio, posicaoFim - posicaoInicio);
+                if (sqlException != null && sqlException.Number == 2601)
+                {
+                    throw new FlightBookingRepositoryException($"Provavelmente você está tentando inserir um {coluna} que já está em uso! Confirme seus dados e tente novamente.");
+                }
+                else if (sqlException != null && sqlException.Number == 515)
+                {
+                    throw new FlightBookingRepositoryException($"Provavelmente você esqueceu de inserir {coluna}! Confirme seus dados e tente novamente.");
+                }
+                else if (sqlException != null && sqlException.Number == 208)
+                {
+                    throw new FlightBookingRepositoryException("Aparentemente a tabela a qual você está tentando inserir os dados não existe! Confirme o nome da tabela e tente novamente.");
+                }
+
+                throw new FlightBookingRepositoryException(dbe.Message);
+            }
+            catch (Exception ex)
+            {
+                throw new FlightBookingRepositoryException(ex.Message);
+
+            }
+            finally
+            {
+                _ctxt.Dispose();
+            }
         }
 
         public Tripulante ObterFuncionarioPorId(int id)
         {
-            throw new NotImplementedException();
+            try
+            {
+                var tripulante = _ctxt.Tripulantes.FirstOrDefault(tri => tri.Id == id);
+                return tripulante;
+            }
+            catch (DbUpdateException dbe)
+            {
+
+                var sqlException = dbe.GetBaseException() as SqlException;
+                int posicaoInicio = sqlException.Message.IndexOf("'") + 1;
+                int posicaoFim = sqlException.Message.IndexOf("'", posicaoInicio);
+                var coluna = sqlException.Message.Substring(posicaoInicio, posicaoFim - posicaoInicio);
+                if (sqlException != null && sqlException.Number == 2601)
+                {
+                    throw new FlightBookingRepositoryException($"Provavelmente você está tentando inserir um {coluna} que já está em uso! Confirme seus dados e tente novamente.");
+                }
+                else if (sqlException != null && sqlException.Number == 515)
+                {
+                    throw new FlightBookingRepositoryException($"Provavelmente você esqueceu de inserir {coluna}! Confirme seus dados e tente novamente.");
+                }
+                else if (sqlException != null && sqlException.Number == 208)
+                {
+                    throw new FlightBookingRepositoryException("Aparentemente a tabela a qual você está tentando inserir os dados não existe! Confirme o nome da tabela e tente novamente.");
+                }
+
+                throw new FlightBookingRepositoryException(dbe.Message);
+            }
+            catch (Exception ex)
+            {
+                throw new FlightBookingRepositoryException(ex.Message);
+
+            }
+            finally
+            {
+                _ctxt.Dispose();
+            }
         }
 
-        public void RemoverFuncionario(Tripulante tripulante)
+        public async void RemoverFuncionario(Tripulante tripulante)
         {
-            throw new NotImplementedException();
+            try
+            {
+                _ctxt.Tripulantes.Remove(tripulante);
+                await _ctxt.SaveChangesAsync();
+            }
+            catch (DbUpdateException dbe)
+            {
+
+                var sqlException = dbe.GetBaseException() as SqlException;
+                int posicaoInicio = sqlException.Message.IndexOf("'") + 1;
+                int posicaoFim = sqlException.Message.IndexOf("'", posicaoInicio);
+                var coluna = sqlException.Message.Substring(posicaoInicio, posicaoFim - posicaoInicio);
+                if (sqlException != null && sqlException.Number == 2601)
+                {
+                    throw new FlightBookingRepositoryException($"Provavelmente você está tentando inserir um {coluna} que já está em uso! Confirme seus dados e tente novamente.");
+                }
+                else if (sqlException != null && sqlException.Number == 515)
+                {
+                    throw new FlightBookingRepositoryException($"Provavelmente você esqueceu de inserir {coluna}! Confirme seus dados e tente novamente.");
+                }
+                else if (sqlException != null && sqlException.Number == 208)
+                {
+                    throw new FlightBookingRepositoryException("Aparentemente a tabela a qual você está tentando inserir os dados não existe! Confirme o nome da tabela e tente novamente.");
+                }
+
+                throw new FlightBookingRepositoryException(dbe.Message);
+            }
+            catch (Exception ex)
+            {
+                throw new FlightBookingRepositoryException(ex.Message);
+
+            }
+            finally
+            {
+                _ctxt.Dispose();
+            }
         }
 
-        public ICollection<Tripulante> RetornarTodosFuncionarios()
+        public List<Tripulante> RetornarTodosFuncionarios()
         {
-            throw new NotImplementedException();
+            try
+            {
+                var tripulantes = _ctxt.Tripulantes.ToList();
+                return tripulantes;
+            }
+            catch (DbUpdateException dbe)
+            {
+
+                var sqlException = dbe.GetBaseException() as SqlException;
+                int posicaoInicio = sqlException.Message.IndexOf("'") + 1;
+                int posicaoFim = sqlException.Message.IndexOf("'", posicaoInicio);
+                var coluna = sqlException.Message.Substring(posicaoInicio, posicaoFim - posicaoInicio);
+                if (sqlException != null && sqlException.Number == 2601)
+                {
+                    throw new FlightBookingRepositoryException($"Provavelmente você está tentando inserir um {coluna} que já está em uso! Confirme seus dados e tente novamente.");
+                }
+                else if (sqlException != null && sqlException.Number == 515)
+                {
+                    throw new FlightBookingRepositoryException($"Provavelmente você esqueceu de inserir {coluna}! Confirme seus dados e tente novamente.");
+                }
+                else if (sqlException != null && sqlException.Number == 208)
+                {
+                    throw new FlightBookingRepositoryException("Aparentemente a tabela a qual você está tentando inserir os dados não existe! Confirme o nome da tabela e tente novamente.");
+                }
+
+                throw new FlightBookingRepositoryException(dbe.Message);
+            }
+            catch (Exception ex)
+            {
+                throw new FlightBookingRepositoryException(ex.Message);
+
+            }
+            finally
+            {
+                _ctxt.Dispose();
+            }
         }
 
-        public ICollection<Tripulante> RetornarTodosOsCopilotos()
-        {
-            throw new NotImplementedException();
-        }
 
-        public ICollection<Tripulante> RetornarTodosOsPilotos()
-        {
-            throw new NotImplementedException();
-        }
+
     }
 }
