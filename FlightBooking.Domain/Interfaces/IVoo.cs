@@ -1,15 +1,13 @@
-﻿using FlightBooking.Domain.Interfaces;
+﻿using FlightBooking.Domain.Models;
 using System;
 using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace FlightBooking.Domain.Models
+namespace FlightBooking.Domain.Interfaces
 {
-    [Table("Voos")]
-    public class Voo : IVoo
+    public interface IVoo
     {
         public int Id { get; set; }
         public string Origem { get; set; }
@@ -25,6 +23,5 @@ namespace FlightBooking.Domain.Models
         public float ValorPrimeiraClasse { get; set; }
         public float ValorClasseEconomica { get; set; }
         public bool Internacional { get; set; }
-        ///Adicionar coleção de tripulantes
     }
 }
