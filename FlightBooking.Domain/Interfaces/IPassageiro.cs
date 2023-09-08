@@ -1,20 +1,13 @@
-﻿using FlightBooking.Domain.Interfaces;
-using Microsoft.EntityFrameworkCore;
+﻿using FlightBooking.Domain.Models;
 using System;
 using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
-using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace FlightBooking.Domain.Models
+namespace FlightBooking.Domain.Interfaces
 {
-    [Table("Passageiros")]
-    [Index(nameof(CPF), IsUnique = true)]
-    [Index(nameof(RG), IsUnique = true)]
-    [Index(nameof(Passaporte), IsUnique = true)]
-    public class Passageiro : IPassageiro
+    public interface IPassageiro
     {
         public int Id { get; set; }
         public string Nome { get; set; }
@@ -26,10 +19,7 @@ namespace FlightBooking.Domain.Models
         public string DataNascimento { get; set; }
         public string Endereco { get; set; }
 
-
         public ICollection<CartaoDeCredito> Cartoes { get; set; }
         public ICollection<Voo> Voos { get; set; }
-
-
     }
 }
