@@ -1,15 +1,13 @@
-﻿using FlightBooking.Domain.Interfaces;
+﻿using FlightBooking.Domain.Models;
 using System;
 using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace FlightBooking.Domain.Models
+namespace FlightBooking.Domain.Interfaces
 {
-    [Table("Avioes")]
-    public class Aviao : IAviao
+    public interface IAviao
     {
         public int Id { get; set; }
         public string Modelo { get; set; }
@@ -17,7 +15,6 @@ namespace FlightBooking.Domain.Models
         public string QuantidadeAssentos { get; set; }
         public string Ano { get; set; }
 
-        public ICollection<Voo> Voos { get; set; } 
-
+        public ICollection<Voo> Voos { get; set; }
     }
 }
