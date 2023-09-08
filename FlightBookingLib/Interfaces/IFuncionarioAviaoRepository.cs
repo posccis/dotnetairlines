@@ -9,7 +9,7 @@ namespace FlightBooking.Repository.Interfaces
 {
     public interface IFuncionarioAviaoRepository<T> where T : IFuncionarioAviao
     {
-        void InserirFuncionario( T funcionario);
+        void InserirFuncionario(T funcionario);
         T ObterFuncionarioPorId(int id);
         T ObterFuncionarioPorCPF(string cpf);
         void AlterarFuncionario(T funcionario);
