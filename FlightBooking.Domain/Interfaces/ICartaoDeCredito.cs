@@ -1,15 +1,12 @@
-﻿using FlightBooking.Domain.Interfaces;
-using System;
+﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace FlightBooking.Domain.Models
+namespace FlightBooking.Domain.Interfaces
 {
-    [Table("CartoesDeCredito")]
-    public class CartaoDeCredito : ICartaoDeCredito
+    public interface ICartaoDeCredito
     {
         public int Id { get; set; }
         public int IdTripulante { get; set; }
