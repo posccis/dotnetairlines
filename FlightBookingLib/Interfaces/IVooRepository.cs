@@ -9,10 +9,10 @@ namespace FlightBooking.Repository.Interfaces
 {
     public interface IVooRepository<T> where T : IVoo
     {
-        void InserirVoo(T Voo);
-        void AlterarVoo(T Voo);
-        void RemoverVoo(T Voo);
+        void InserirVoo(T voo);
+        void AlterarVoo(T voo);
+        void RemoverVoo(T voo);
         List<T> ObterTodosOsVoos();
-        T ObterVooPorId(int Id);
+        T ObterVooPorId(int id);
     }
 }
