@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "D6XMvBzgj8Dn+Yn1iCPOH4hjVJ/m82HVjTlhP40MuTHtszB1s7OulVXpuGMzR/a+SEnBfQpoCJ+Od9lRO0hu6g==",
+  "dgSpecHash": "LQwIEJ5yZS98o1rFp+WMC1E6ijG0u8WZ/9I1NChG32Day+IlF5QjXK29jzMz7urcMwnHQyeXoeyCrc5oHmOyqg==",
   "success": true,
   "projectFilePath": "D:\\victor\\estudos\\programming\\FlightBookingSystem\\FlightBooking.Service\\FlightBooking.Service.csproj",
   "expectedPackageFiles": [
@@ -43,6 +43,7 @@
     "C:\\Users\\victo\\.nuget\\packages\\microsoft.sqlserver.server\\1.0.0\\microsoft.sqlserver.server.1.0.0.nupkg.sha512",
     "C:\\Users\\victo\\.nuget\\packages\\microsoft.win32.registry\\5.0.0\\microsoft.win32.registry.5.0.0.nupkg.sha512",
     "C:\\Users\\victo\\.nuget\\packages\\microsoft.win32.systemevents\\5.0.0\\microsoft.win32.systemevents.5.0.0.nupkg.sha512",
+    "C:\\Users\\victo\\.nuget\\packages\\serilog\\3.0.1\\serilog.3.0.1.nupkg.sha512",
     "C:\\Users\\victo\\.nuget\\packages\\system.buffers\\4.5.1\\system.buffers.4.5.1.nupkg.sha512",
     "C:\\Users\\victo\\.nuget\\packages\\system.configuration.configurationmanager\\5.0.0\\system.configuration.configurationmanager.5.0.0.nupkg.sha512",
     "C:\\Users\\victo\\.nuget\\packages\\system.diagnostics.diagnosticsource\\5.0.0\\system.diagnostics.diagnosticsource.5.0.0.nupkg.sha512",
